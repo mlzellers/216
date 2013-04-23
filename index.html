@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <title>Registration</title>
+    <style>
+	ul {list-style-type:none;}
+	label {text-align:right; width:100px;display:inline-block;}
+	textarea {height:200px;width:200px;}
+	input, select, textarea {background:yellow;color:blue;font-size:2em;}
+	fieldset {border:2px red dotted;margin:50px;width:60%}
+	legend{background:green;color:white;font-size:3em;}
+    </style>
+</head>
+<body>
+    <form method="get">
+	<fieldset>
+	  <legend>Mandatory</legend>
+	<ul>
+	<li>
+		<label for="txtname">Name:</label>
+        	<input type="text" name="name" id="txtname" />
+	</li>
+	<li>
+		<label for="txtbday">Birthday:</label>
+        	<input type="date" name="bday" id="txtbday" />
+	</li>
+	<li>
+		<label for="txtcolor">Favorite Color:</label>
+        	<input type="color" name="color" id="txtcolor" />
+	</li>
+	<li>
+		<label for="txtpass">Password:</label>
+        	<input type="password" name="pass" id="txtpass" />
+	</li>
+	<li>
+		<label for="ddState">State:</label>
+		<select name="state" id="ddState">
+			<option value="Oh">Ohio</option>
+			<option value="Mi">Michigan</option>
+			<option value="In">Indiana</option>
+		</select>
+	</li>
+	</ul>
+	</fieldset>
+	<fieldset>
+	   <legend>Optional</legend>
+	<ul>
+	<ul>
+	<li>
+		<label for="rbLorain">Lorain:</label>
+		<input id="rbLorain" type="radio" name="county" value="Lorain"/>
+		Cuyahoga:
+		<input type="radio" name="county" value="Cuyahoga"/>
+		Erie:
+		<input type="radio" name="county" value="Erie"/>
+        </li>
+	<li>
+		<label for="terms">Agree to the terms you never read?:</label>
+		<input id="terms" type="checkbox" name="terms" value="Y"/>
+		
+        </li>
+	<li>
+		<label for="comments">Comments:</label>
+		<textarea  id="comments" name="comments"></textarea>
+        </li>
+	<li>
+		<input name="submit" type="submit" value="go!!!" />
+	</li>
+	</ul>   
+ </form>
+</body>
+</html>
